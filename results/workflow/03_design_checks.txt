@@ -1,0 +1,11 @@
+Treated units (state): 1 -> [3]
+Treatment start per treated unit: {3: 1989}
+Distinct treatment start periods: 1
+Timing is common (all treated units start in 1989): plain TWFE is applicable.
+
+Only 1 treated unit(s): clustered standard errors are NOT
+reliable (cluster-robust SEs need many clusters, and there is no
+within-treatment-group variation to exploit).
+-> Inference will use PLACEBO TESTS (procedure step 7): assign the
+   treatment to each control unit in turn, re-estimate, and report
+   the treated unit's rank; placebo p-value = rank / number of units.

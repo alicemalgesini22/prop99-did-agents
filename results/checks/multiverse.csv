@@ -1,0 +1,13 @@
+choice,estimate,note
+"DiD, pre-period 1970-1988 (plan.md test 1)",-27.35,
+"DiD, pre-period 1970-1987 (drop 1988: possible anticipation)",-27.87,
+"DiD, pre-period 1980-1988 only",-21.29,
+"Event study, mean post-1989 coefficient, reference 1988",-17.98,
+"Event study, mean post-1989 coefficient, reference 1987",-21.62,
+"Trend-adjusted, linear trend of the gap fitted 1970-1988 (plan.md test 4 uses 1970)",-8.26,slope -1.232 per year
+"Trend-adjusted, linear trend of the gap fitted 1975-1988 (plan.md test 4 uses 1970)",-12.79,slope -0.839 per year
+"Trend-adjusted, linear trend of the gap fitted 1980-1988 (plan.md test 4 uses 1970)",-16.86,slope -0.422 per year
+"Trend-adjusted, linear trend of the gap fitted 1984-1988 (plan.md test 4 uses 1970)",-14.72,slope -0.701 per year
+TWFE + California linear trend over all years,-5.18,
+"Placebo rank of California, California kept in the control pool",4.0,p = 4/39 = 0.103
+"Placebo rank of California, California removed from the control pool",4.0,p = 4/39 = 0.103

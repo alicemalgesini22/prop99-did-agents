@@ -1,0 +1,9 @@
+=== Step 7: in-space placebo test ===
+Placebo treatment = (unit == s) & (year >= 1989) for each of the 38 control states; TWFE cigsale ~ plc + C(state) + C(year).
+California (real) estimate: -27.3491
+Placebo estimates: min -61.639, max 27.470, mean 0.720
+California's rank among all 39 (1 = most negative): 4
+Placebo p-value = rank / 39 = 0.1026
+Interpretation: p < 0.05 means California's estimated effect is more negative than the 95th percentile of the placebo distribution.
+
+Saved results/agent/placebo_estimates.csv, placebo_hist.png, placebo_test.txt

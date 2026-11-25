@@ -1,0 +1,6 @@
+Raw trends (agent_framing): cigsale means by group
+rows used: 1209 (all; no filters)
+pre-period  (1970-1988): treated mean 116.21, control mean 130.57, gap -14.36
+post-period (1989-2000): treated mean 60.35, control mean 102.06, gap -41.71
+change in gap (2x2 raw difference of means): -27.35
+wrote C:\Users\alice\my-analysis\results\agent_framing\03_raw_trends.png

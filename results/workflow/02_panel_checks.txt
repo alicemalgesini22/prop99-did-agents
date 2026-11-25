@@ -1,0 +1,37 @@
+Loaded data/raw/california_tobacco.csv
+Rows loaded: 1209
+Units (state): 39
+Periods (year): 31 (1970-2000)
+Outcome (cigsale): dtype float64, range 40.7 to 296.2
+Duplicate (state,year) pairs: 0 rows flagged (keep=False, so counts both members of each pair)
+Balance check: 39 units x 31 periods = 1209 expected rows; file has 1209 rows and 1209 unique (state,year) pairs -> balanced, no gaps
+Rows per unit: min 31, max 31 (all units have 31 rows)
+
+Missing values by column (only columns with any missing shown):
+  state: no missing values
+  year: no missing values
+  cigsale: no missing values
+  lnincome: 195 missing rows in 5 years 1970-2000
+    exact missing years: [np.int64(1970), np.int64(1971), np.int64(1998), np.int64(1999), np.int64(2000)]
+    missing rows per year: min 39, max 39 (of 39 units)
+    -> 195 rows = 39 units x 5 years: missing for ALL units in those years
+  beer: 663 missing rows in 17 years 1970-2000
+    exact missing years: [np.int64(1970), np.int64(1971), np.int64(1972), np.int64(1973), np.int64(1974), np.int64(1975), np.int64(1976), np.int64(1977), np.int64(1978), np.int64(1979), np.int64(1980), np.int64(1981), np.int64(1982), np.int64(1983), np.int64(1998), np.int64(1999), np.int64(2000)]
+    missing rows per year: min 39, max 39 (of 39 units)
+    -> 663 rows = 39 units x 17 years: missing for ALL units in those years
+  age15to24: 390 missing rows in 10 years 1991-2000
+    exact missing years: [np.int64(1991), np.int64(1992), np.int64(1993), np.int64(1994), np.int64(1995), np.int64(1996), np.int64(1997), np.int64(1998), np.int64(1999), np.int64(2000)]
+    missing rows per year: min 39, max 39 (of 39 units)
+    -> 390 rows = 39 units x 10 years: missing for ALL units in those years
+  retprice: no missing values
+  california: no missing values
+  after_treatment: no missing values
+
+Treatment rule 'california == True AND year >= 1989': 12 treated rows
+  = 1 treated units x 12 post periods
+
+FILTERS APPLIED: none. Reasons:
+  - no duplicate rows to drop (checked above)
+  - outcome and treatment columns have no missing values (checked above)
+  - covariates (lnincome, beer, age15to24) have missing years but are NOT used per config (controls_covariates = [])
+ROWS AFTER FILTERS: 1209 (unchanged)

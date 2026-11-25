@@ -1,0 +1,43 @@
+{
+  "placebo_pre_only": [
+    {
+      "start": 2014,
+      "coef": 0.44154166666673156,
+      "se": 1.77476083094937,
+      "p": 0.8035236977381046,
+      "n_obs": 300
+    },
+    {
+      "start": 2015,
+      "coef": 0.15054166666644164,
+      "se": 1.9429124770635775,
+      "p": 0.9382397325952508,
+      "n_obs": 300
+    }
+  ],
+  "start_date_sensitivity": [
+    {
+      "start": 2016,
+      "coef": -0.30389583333308456,
+      "se": 1.0345428007789716,
+      "p": 0.7689497675954285,
+      "n_obs": 600
+    },
+    {
+      "start": 2017,
+      "coef": -0.45315000000013805,
+      "se": 0.9632787134486572,
+      "p": 0.6380516946627173,
+      "n_obs": 600
+    },
+    {
+      "start": 2018,
+      "coef": 0.16389583333339086,
+      "se": 1.1201650940294234,
+      "p": 0.8836735159665536,
+      "n_obs": 600
+    }
+  ],
+  "note": "placebo rows restrict to years < treatment_start; sensitivity rows use all rows and vary the assumed start date",
+  "script": "src/school_tutoring/09_placebo_start.py"
+}

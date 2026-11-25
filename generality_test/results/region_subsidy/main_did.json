@@ -1,0 +1,45 @@
+{
+  "main_twfe_cluster_unit": {
+    "label": "main_twfe_cluster_unit",
+    "formula": "investment ~ treat_post + C(region_id) + C(quarter)",
+    "n_obs": 720,
+    "n_units": 30,
+    "coef": 7.289079166666664,
+    "se": 0.21029770446513008,
+    "t": 34.66076429700298,
+    "p": 3.075164157394177e-263,
+    "ci_lo": 6.876903239883561,
+    "ci_hi": 7.701255093449767,
+    "cluster": "region_id",
+    "r2": 0.9719759369367151,
+    "extra_terms": []
+  },
+  "main_twfe_homoskedastic": {
+    "label": "main_twfe_homoskedastic",
+    "formula": "investment ~ treat_post + C(region_id) + C(quarter)",
+    "n_obs": 720,
+    "n_units": 30,
+    "coef": 7.289079166666664,
+    "se": 0.27876499286954415,
+    "t": 26.147756544444558,
+    "p": 3.0510862383166396e-104,
+    "ci_lo": 6.741715091989532,
+    "ci_hi": 7.836443241343796,
+    "cluster": "none (homoskedastic OLS)",
+    "r2": 0.9719759369367151,
+    "extra_terms": []
+  },
+  "simple_2x2": {
+    "mean_treated_post": 70.1377,
+    "mean_treated_pre": 60.49500833333333,
+    "mean_control_post": 57.7584375,
+    "mean_control_pre": 55.404824999999995,
+    "diff_treated": 9.642691666666664,
+    "diff_control": 2.353612500000004,
+    "did_2x2": 7.28907916666666,
+    "n_treated_post": 120,
+    "n_treated_pre": 120,
+    "n_control_post": 240,
+    "n_control_pre": 240
+  }
+}

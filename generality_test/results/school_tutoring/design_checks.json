@@ -1,0 +1,30 @@
+{
+  "treated_units": 20,
+  "control_units": 40,
+  "clusters": 60,
+  "few_treated_rule_triggered": false,
+  "staggered_timing": false,
+  "distinct_treatment_starts": 1,
+  "treatment_start": 2017,
+  "pre_periods_per_unit": 5,
+  "post_periods_per_unit": 5,
+  "pre_trend_test": {
+    "coef_points_per_year": -0.11202500000014304,
+    "cluster_se": 0.6077823094026075,
+    "p_value": 0.853764277445968,
+    "rows": 300,
+    "spec": "y ~ unit FE + year FE + treated x (year-2012), pre years only"
+  },
+  "pre_mean_level": {
+    "control": 510.47785000000005,
+    "treated": 500.0419
+  },
+  "pre_mean_within_slope": {
+    "control": 1.5383750000002459,
+    "control_sd": 2.2465967160331646,
+    "treated": 1.426350000000513,
+    "treated_sd": 1.8494170710346414
+  },
+  "inference_primary": "cluster by school_id",
+  "inference_secondary": "randomisation inference over treated labels"
+}

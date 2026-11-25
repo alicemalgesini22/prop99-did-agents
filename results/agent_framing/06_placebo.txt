@@ -1,0 +1,16 @@
+Placebo test (agent_framing): treatment in 1989 assigned to each control state in turn
+rows used per regression: 1209 (all; no filters)
+California's actual TWFE beta       = -27.3491
+placebo betas: min -61.6389, max 27.4697, mean 0.7197, sd 17.5067
+
+most negative 5 of the 39 estimates:
+  state 22: beta = -61.6389
+  state 21: beta = -38.5828
+  state 24: beta = -35.0658
+  state 29: beta = -16.7020
+  state 9: beta = -11.5866
+
+California's rank among the 39 (1 = most negative): 4
+placebo p-value = rank / 39 = 0.1026 (>= 0.05)
+NOTE: this p-value treats all 39 units as exchangeable; it is the plan.md rule.
+wrote C:\Users\alice\my-analysis\results\agent_framing\06_placebo.png

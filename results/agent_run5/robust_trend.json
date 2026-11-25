@@ -1,0 +1,10 @@
+{
+  "baseline_coef": -27.349111081930875,
+  "baseline_se_cluster": 2.975098028367018,
+  "variantA_coef": -5.176542641765356,
+  "variantA_se_cluster": 3.0434186853503102,
+  "variantA_se_classical": 8.190356139364543,
+  "variantB_coef": 0.23273048392328596,
+  "variantB_se_cluster": 1.4129644680145803,
+  "preperiod_slope": -1.7794736494099457
+}

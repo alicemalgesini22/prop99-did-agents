@@ -1,0 +1,9 @@
+Mechanism check (agent_framing): retprice ~ treated_post + unit FE + year FE
+rows used: 1209 (all; retprice has no missing values)
+
+TWFE beta on retprice                = 25.1956
+  cluster-by-state SE                  = 1.9922
+  classical SE                         = 2.9074
+  (unit of retprice: price per pack; unit possibly cents - marked unverified in data/README.md)
+
+2x2 cross-check: treated change 137.6548, control change 112.4592, 2x2 DiD 25.1956

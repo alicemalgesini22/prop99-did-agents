@@ -1,0 +1,12 @@
+Main TWFE estimate (agent_rerun)
+specification: cigsale ~ treated_post + unit FE + year FE (treatment = (california == True) AND (year >= 1989), start 1989)
+rows: 1209 (all rows, no filter); parameters: 70; treated units: 1; clusters: 39
+
+beta(treated_post)          = -27.3491 packs/person/year
+  SE classical              = 4.4095
+  SE HC1 robust             = 2.9379
+  SE clustered by unit      = 2.8487   <- NOT reliable with 1 treated unit; placebo test is the inference (see 05_placebo)
+
+2x2 difference of means     = -27.3491
+TWFE beta - 2x2             =  2.84e-12 (must be ~0: single cohort, balanced panel)
+R2                          = 0.8776

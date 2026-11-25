@@ -1,0 +1,101 @@
+{
+  "data_path": "data/raw/region_subsidy.csv",
+  "data_description": "data/README_region_subsidy.md",
+  "unit": "region_id",
+  "time": "quarter",
+  "outcome": "investment",
+  "outcome_units": "million euro",
+  "group_flag_column": "subsidy_region",
+  "treated_rule": "subsidy_region == True",
+  "treated_units": [
+    1,
+    6,
+    11,
+    15,
+    17,
+    20,
+    21,
+    23,
+    28,
+    30
+  ],
+  "treatment_start": 13,
+  "treatment_start_source": "README_region_subsidy.md: 'received an investment subsidy from quarter 13'",
+  "controls": [],
+  "cluster": "region_id",
+  "n_units": 30,
+  "n_periods": 24,
+  "design": "two-way fixed effects DiD, region and quarter FE, all rows, no covariates, uniform treatment timing (single start quarter)",
+  "roles_justification": {
+    "unit": "region_id takes values 1-30 and is constant across quarters; README calls it the region identifier",
+    "time": "quarter takes values 1-24 with no gaps; README calls it the period",
+    "outcome": "investment, million euro, float, never empty; README question is about private investment",
+    "treatment": "subsidy_region is the only treatment-related column; it is boolean, constant within region, and splits 10 treated from 20 control regions",
+    "timing": "no treatment-date column exists in the data; the start quarter comes from the README text, which fixes a single start quarter for all treated regions",
+    "controls": "plan asks for no covariates"
+  },
+  "checks": {
+    "unit_candidates": [
+      "region_id"
+    ],
+    "time_candidates": [
+      "quarter"
+    ],
+    "group_flag_values": [
+      "False",
+      "True"
+    ],
+    "group_flag_is_bool": true,
+    "group_flag_constant_within_unit": true,
+    "one_row_per_unit_time": true,
+    "outcome_numeric": true,
+    "outcome_missing": 0,
+    "time_values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "time_gaps": true,
+    "columns_resembling_post": [],
+    "n_treated_units": 10,
+    "n_control_units": 20,
+    "treated_units": [
+      1,
+      6,
+      11,
+      15,
+      17,
+      20,
+      21,
+      23,
+      28,
+      30
+    ],
+    "control_units_excluded_from_spec": true,
+    "treatment_start_inside_panel": true,
+    "pre_periods_per_unit": 12,
+    "post_periods_per_unit": 12,
+    "same_start_for_all_treated": true
+  }
+}

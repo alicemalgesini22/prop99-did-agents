@@ -1,0 +1,15 @@
+=== Step 8: robustness to a California-specific linear pre-trend ===
+(0) Baseline TWFE (no trend): -27.3491
+(a) TWFE + treated-unit trend (state==3)*(year-1970), slope fitted on ALL years 1970-2000:
+    unit_trend (California-specific slope): -1.4305 packs/yr
+    treat_ (post jump vs that trend) = average post-period effect: -5.1765
+    change vs baseline: 22.1726
+    CAVEAT: this slope pools the pre-period trend with any trend in the post-period effect itself; version (b) is the clean pre-period-only fit.
+(b) Pre-period-only extrapolation (raw gap = CA minus unweighted control mean):
+    pre-period gap trend (1970-1988): -1.2317 packs/yr (intercept 2423.18)
+    unadjusted 2x2 DiD: -27.3491
+    mean post year 1994.5, mean pre year 1979.0; trend correction = -19.0914
+    trend-adjusted 2x2 effect: -8.2577
+    pre-trend is NOT linear: last-5-years slope (1984-1988) = -0.7013 packs/yr vs full-pre-period -1.2317 packs/yr
+
+Saved results/agent/robustness_trend.txt

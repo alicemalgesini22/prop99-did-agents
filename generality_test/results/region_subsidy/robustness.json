@@ -1,0 +1,80 @@
+{
+  "main": {
+    "label": "main_no_trends",
+    "formula": "investment ~ treat_post + C(region_id) + C(quarter)",
+    "n_obs": 720,
+    "n_units": 30,
+    "coef": 7.289079166666664,
+    "se": 0.21029770446513008,
+    "t": 34.66076429700298,
+    "p": 3.075164157394177e-263,
+    "ci_lo": 6.876903239883561,
+    "ci_hi": 7.701255093449767,
+    "cluster": "region_id",
+    "r2": 0.9719759369367151,
+    "extra_terms": []
+  },
+  "trend_treated_group": {
+    "label": "trend_treated_group",
+    "formula": "investment ~ treat_post + trend_treated + C(region_id) + C(quarter)",
+    "n_obs": 720,
+    "n_units": 30,
+    "coef": -0.17286593822845253,
+    "se": 0.5956304475346551,
+    "t": -0.29022347488103317,
+    "p": 0.7716452783471228,
+    "ci_lo": -1.3402801634918509,
+    "ci_hi": 0.9945482870349458,
+    "cluster": "region_id",
+    "r2": 0.9819560806180967,
+    "extra_terms": [
+      "trend_treated"
+    ]
+  },
+  "trend_treated_unit_specific": {
+    "label": "trend_treated_unit_specific",
+    "formula": "investment ~ treat_post + trend_u1 + trend_u6 + trend_u11 + trend_u15 + trend_u17 + trend_u20 + trend_u21 + trend_u23 + trend_u28 + trend_u30 + C(region_id) + C(quarter)",
+    "n_obs": 720,
+    "n_units": 30,
+    "coef": -0.17286593822841345,
+    "se": 0.5997024083769102,
+    "t": -0.28825286644466497,
+    "p": 0.7731531836715684,
+    "ci_lo": -1.3482610600890892,
+    "ci_hi": 1.0025291836322623,
+    "cluster": "region_id",
+    "r2": 0.9820952005039838,
+    "extra_terms": [
+      "trend_u1",
+      "trend_u6",
+      "trend_u11",
+      "trend_u15",
+      "trend_u17",
+      "trend_u20",
+      "trend_u21",
+      "trend_u23",
+      "trend_u28",
+      "trend_u30"
+    ]
+  },
+  "change_group": -7.461945104895117,
+  "change_unit_specific": -7.461945104895078,
+  "pct_change_group": -102.37157443726194,
+  "pct_change_unit_specific": -102.37157443726142,
+  "pre_period_slope_descriptive": {
+    "0": {
+      "n_units": 20,
+      "mean_slope": 0.18421538461538206,
+      "sd_slope": 0.09794270877041573,
+      "min": -0.01466083916084192,
+      "max": 0.3522622377622356
+    },
+    "1": {
+      "n_units": 10,
+      "mean_slope": 0.8319590909090883,
+      "sd_slope": 0.18684171196448032,
+      "min": 0.4108181818181793,
+      "max": 1.0362132867132838
+    }
+  }
+}

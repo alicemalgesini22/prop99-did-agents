@@ -1,0 +1,45 @@
+{
+  "twfe_cluster_unit": {
+    "label": "twfe_cluster_unit",
+    "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+    "n_obs": 600,
+    "n_units": 60,
+    "coef": -0.45315000000013805,
+    "se": 0.9632787134486572,
+    "t": -0.47042459640554585,
+    "p": 0.6380516946627173,
+    "ci_lo": -2.3411415854335855,
+    "ci_hi": 1.4348415854333092,
+    "cluster": "school_id",
+    "r2": 0.9563915412513906
+  },
+  "twfe_iid": {
+    "label": "twfe_iid",
+    "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+    "n_obs": 600,
+    "n_units": 60,
+    "coef": -0.45315000000013805,
+    "se": 1.0723581803867834,
+    "t": -0.4225733605507571,
+    "p": 0.6727779487125971,
+    "ci_lo": -2.5597440631018675,
+    "ci_hi": 1.6534440631015914,
+    "cluster": "none (homoskedastic OLS)",
+    "r2": 0.9563915412513906
+  },
+  "two_by_two": {
+    "mean_treated_post": 506.7207,
+    "mean_treated_pre": 500.0419,
+    "mean_control_post": 517.6098000000001,
+    "mean_control_pre": 510.47785000000005,
+    "diff_treated": 6.678800000000024,
+    "diff_control": 7.1319500000000176,
+    "did_2x2": -0.4531499999999937
+  },
+  "demeaning_check": {
+    "coef": -0.45314999999999817,
+    "se": 0.9632787134486566,
+    "n": 600
+  },
+  "interpretation_note": "Estimate is the change in the treated-control gap in reading_score after 2017, in test points. Positive = gap narrowed / treated gained relative to control."
+}

@@ -1,0 +1,8 @@
+Mechanism check: retprice (unit from file unverified, see data/README.md caveat 4)
+TWFE beta(treated_post) on retprice =  25.196 (cluster-by-unit SE 1.992; 1 treated unit -> SE not reliable, this is descriptive)
+2x2 difference of means on retprice =  25.196
+  California: 66.64 (1970-1988) -> 204.29 (1989-2000)
+  controls:   64.50 (1970-1988) -> 176.96 (1989-2000)
+CA-minus-control price gap: 1988 -0.79 -> 1989 -2.32 (change -1.53)
+positive = retail price rose in California relative to controls, consistent with the tax
+yearly CA-minus-control retprice gap, 1985-1992: 1985: +1.78, 1986: +2.09, 1987: -5.61, 1988: -0.79, 1989: -2.32, 1990: +22.10, 1991: +37.24, 1992: +33.01

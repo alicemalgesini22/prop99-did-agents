@@ -1,0 +1,32 @@
+Loaded data/raw/california_tobacco.csv
+Rows after load: 1209 (no filter applied)
+Columns present: ['state', 'year', 'cigsale', 'lnincome', 'beer', 'age15to24', 'retprice', 'california', 'after_treatment']
+Units: 39 distinct state values: [np.int64(1), np.int64(2), np.int64(3), np.int64(4), np.int64(5), np.int64(6), np.int64(7), np.int64(8), np.int64(9), np.int64(10), np.int64(11), np.int64(12), np.int64(13), np.int64(14), np.int64(15), np.int64(16), np.int64(17), np.int64(18), np.int64(19), np.int64(20), np.int64(21), np.int64(22), np.int64(23), np.int64(24), np.int64(25), np.int64(26), np.int64(27), np.int64(28), np.int64(29), np.int64(30), np.int64(31), np.int64(32), np.int64(33), np.int64(34), np.int64(35), np.int64(36), np.int64(37), np.int64(38), np.int64(39)]
+Periods: 31 distinct year values: 1970-2000
+Duplicate (unit, year) pairs: 0
+Balance: 39/39 units have all 31 periods; counts per unit: min=31, max=31
+Missing values per column (rows):
+  state: 0 missing rows
+  year: 0 missing rows
+  cigsale: 0 missing rows
+  lnincome: 195 missing rows
+      exact years: [np.int64(1970), np.int64(1971), np.int64(1998), np.int64(1999), np.int64(2000)] (5 years x 39 units = 195 rows)
+  beer: 663 missing rows
+      exact years: [np.int64(1970), np.int64(1971), np.int64(1972), np.int64(1973), np.int64(1974), np.int64(1975), np.int64(1976), np.int64(1977), np.int64(1978), np.int64(1979), np.int64(1980), np.int64(1981), np.int64(1982), np.int64(1983), np.int64(1998), np.int64(1999), np.int64(2000)] (17 years x 39 units = 663 rows)
+  age15to24: 390 missing rows
+      exact years: [np.int64(1991), np.int64(1992), np.int64(1993), np.int64(1994), np.int64(1995), np.int64(1996), np.int64(1997), np.int64(1998), np.int64(1999), np.int64(2000)] (10 years x 39 units = 390 rows)
+  retprice: 0 missing rows
+  california: 0 missing rows
+  after_treatment: 0 missing rows
+Outcome 'cigsale' missing rows: 0 (analysis keeps all rows if 0; rows would only be dropped by filters below)
+Units with california==True: [np.int64(3)] (rows: 31)
+after_treatment is constant within each year: True
+after_treatment==True rows: 468 = 39 units x 12 years -> it is a year dummy for ALL states
+after_treatment==True rows among CONTROL units: 456 -> after_treatment alone would mistreat 38 controls; NOT used as treatment
+Treatment rule: (state == 3) & (year >= 1989) -> 12 treated state-year rows
+All treated rows are unit(s) [np.int64(3)], years 1989-2000
+California pre-1989 rows: 19; treat_ False in all: True; after_treatment False in all: True
+Number of treated UNITS: 1
+Only 1 treated unit: treatment timing is trivially common (1989). Not staggered.
+Fewer than 5 treated units: clustered SEs are not reliable; inference will use placebo tests (plan.md test 3).
+Rows entering analysis: 1209 (no rows dropped: outcome complete, no covariates used)

@@ -1,0 +1,29 @@
+{
+  "data_path": "data/raw/california_tobacco.csv",
+  "unit": "state",
+  "time": "year",
+  "outcome": "cigsale",
+  "treated_units": [3],
+  "treatment_rule": "california == True AND year >= 1989",
+  "treatment_start": 1989,
+  "pre_period": [1970, 1988],
+  "post_period": [1989, 2000],
+  "treatment_group_col": "california",
+  "time_indicator_col": "after_treatment",
+  "controls": [],
+  "cluster": "state",
+  "environment_note": "pandas/statsmodels wheels are blocked by a Windows application-control policy in this environment (DLL load failure, verified by reinstalling pandas 3.1.1 and 2.3.3); scripts use csv + numpy + scipy instead, same estimators implemented directly.",
+  "role_sources": {
+    "unit": "data/README.md 'Panel structure': numeric state IDs 1-39, one row per state-year",
+    "time": "data/README.md 'Panel structure': calendar years 1970-2000",
+    "outcome": "data/README.md and plan.md: cigsale = per-capita cigarette SALES in packs, not consumption",
+    "treatment_group": "data/README.md: california is True for state 3 only, all 31 years; AGENTS.md: treatment = california AND year >= 1989",
+    "time_indicator": "after_treatment is a year dummy (year >= 1989) for every state - used only to CHECK the post period, never as the treatment (README rule 2)",
+    "covariate": "plan.md test 1 says no covariates; README caveat 3 documents lnincome/beer/age15to24 missing in many years (beer missing 1970-1983 and 1998-2000, age15to24 missing 1991-2000, lnincome missing 1970-1971 and 1998-2000), so adding any would drop rows"
+  },
+  "checks": {
+    "treatment_not_after_treatment": "after_treatment is True in 456 post-1988 rows that are NOT California; it fails the check 'zero for control units' and is not used as treatment",
+    "treated_group_size": "1 treated unit (state 3), 38 control units",
+    "staggered_timing": "no - the single treated unit starts in 1989, so plain two-way fixed effects is the planned specification"
+  }
+}

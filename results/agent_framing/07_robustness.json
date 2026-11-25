@@ -1,0 +1,17 @@
+{
+  "beta_main": -27.349111081929834,
+  "two_step_pre_fitted": {
+    "theta": -1.2317035513021324,
+    "se_theta_classical": 0.40533432683123355,
+    "beta": -8.257706036746761,
+    "se_cluster": 2.8487415427773652,
+    "change_vs_main": 19.091405045183073,
+    "pre_rows_used": 741
+  },
+  "one_step_all_periods": {
+    "theta": -1.4304882864623565,
+    "se_theta_cluster": 0.18642493331097085,
+    "beta": -5.176542641765501,
+    "change_vs_main": 22.172568440164333
+  }
+}

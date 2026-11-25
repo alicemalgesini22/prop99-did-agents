@@ -1,0 +1,21 @@
+{
+  "primary": {
+    "inference": "cluster by school_id",
+    "n_clusters": 60,
+    "coef": -0.45315000000013805,
+    "se": 0.9632787134486572,
+    "p_value": 0.6380516946627173
+  },
+  "secondary_randomisation": {
+    "inference": "re-assign 20 treated labels among 60 schools",
+    "n_draws": 2000,
+    "seed": 20261121,
+    "observed_coef": -0.45315000000013805,
+    "placebo_sd": 0.9535107483731852,
+    "placebo_mean": 0.012913800000000095,
+    "p_value_two_sided": 0.632,
+    "n_extreme": 1264,
+    "coef_formula_check": -0.45314999999999667
+  },
+  "script": "src/school_tutoring/07_inference.py"
+}

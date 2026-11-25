@@ -1,0 +1,18 @@
+Pre-period gap trend (fitted on 1970-1988 ONLY):
+  gap_t = 2423.182 + -1.2317 * year   (slope SE 0.1058)
+  i.e. the treated-vs-control gap widened by 1.232 packs/year before treatment (California fell further behind the controls)
+
+Post period (1989-2000):
+  mean raw gap                : -41.708
+  mean extrapolated gap       : -33.450
+  TREND-ADJUSTED EFFECT       : -8.258  (per-year effects -12.69 to 0.04)
+
+Pre period (1970-1988) same measure (should be ~0 by construction):
+  mean pre effect vs trend    : -0.000
+  pre effects range           : -2.84 to 6.19
+
+Secondary (different estimator; trend fitted on ALL periods, not pre-only):
+  TWFE + treated x linear time: treat_post -5.177, trend coef -1.4305
+
+Comparison with unadjusted TWFE estimate: -27.349 (05_main_estimate.txt)
+  trend-adjusted: -8.258 (change from TWFE: +19.091)

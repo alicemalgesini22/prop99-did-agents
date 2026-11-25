@@ -1,0 +1,23 @@
+{
+  "specification": "outcome ~ treated*post + unit FE + time FE, all rows, no covariates",
+  "coef": 7.88863492063493,
+  "se_cluster_unit": 0.554502894920545,
+  "t": 14.226499073129808,
+  "p": 6.274522248732771e-46,
+  "ci95": [
+    6.801829217267463,
+    8.975440624002395
+  ],
+  "n_obs": 2400,
+  "n_clusters": 50,
+  "r2": 0.9580058696053423,
+  "two_by_two": 7.888634920634942,
+  "two_by_two_cells": {
+    "treated_pre": 108.44784444444446,
+    "treated_post": 125.46862222222224,
+    "control_pre": 92.65558452380954,
+    "control_post": 101.78772738095238
+  },
+  "se_unclustered": 0.4386634808779688,
+  "coef_fast_check": 7.888634920634922
+}

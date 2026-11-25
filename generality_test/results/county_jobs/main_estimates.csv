@@ -1,0 +1,4 @@
+estimator,estimate,cluster_se
+"CS ATT (cohort-size weighted, post)",2.839311728395062,
+CS ATT (unweighted mean of post cells),2.9862901234567905,
+TWFE treated x post,1.952473891001207,0.2461160684509706

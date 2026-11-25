@@ -1,0 +1,2 @@
+estimator,estimate,boot_se,ci_lo,ci_hi,n_boot,seed
+"CS ATT (cohort-size weighted, post)",2.839311728395062,0.2567276636485187,2.3339515176005756,3.3213813802237198,999,20261125

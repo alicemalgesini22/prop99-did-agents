@@ -1,0 +1,494 @@
+{
+  "variant_A_pool_includes_treated": {
+    "label": "A: treated unit kept in the placebo pool",
+    "rows": [
+      {
+        "unit": 1,
+        "coef": 22.32187151798849,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 2,
+        "coef": 22.16837529087769,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 3,
+        "coef": -27.349111081928,
+        "is_treated_unit": true,
+        "n": 1209
+      },
+      {
+        "unit": 4,
+        "coef": -11.29447142283048,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 5,
+        "coef": -3.5012238300816527,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 6,
+        "coef": 7.5564269447192665,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 7,
+        "coef": 8.468858468787161,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 8,
+        "coef": -2.4591530555932124,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 9,
+        "coef": -11.586610288611016,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 10,
+        "coef": 12.870313634726262,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 11,
+        "coef": 7.773847152871632,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 12,
+        "coef": -0.9300307848912439,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 13,
+        "coef": 3.2499582769686874,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 14,
+        "coef": 3.5826061738393626,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 15,
+        "coef": -2.7008758731615288,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 16,
+        "coef": 1.6812194769645004,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 17,
+        "coef": 18.032052294589,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 18,
+        "coef": 16.165327313423983,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 19,
+        "coef": 0.005355701111898981,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 20,
+        "coef": 6.808298893805905,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 21,
+        "coef": -38.58276797970052,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 22,
+        "coef": -61.63886439481523,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 23,
+        "coef": -0.27102974225023857,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 24,
+        "coef": -35.06583837436639,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 25,
+        "coef": -2.8386203091322706,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 26,
+        "coef": 12.445383085986506,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 27,
+        "coef": 1.1527593388991413,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 28,
+        "coef": 9.118859402912534,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 29,
+        "coef": -16.701984977897766,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 30,
+        "coef": 15.915951262109026,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 31,
+        "coef": 12.010551152356221,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 32,
+        "coef": 27.46965582240845,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 33,
+        "coef": -10.942012788625188,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 34,
+        "coef": 9.716193905387389,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 35,
+        "coef": -8.371722445043869,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 36,
+        "coef": -6.229513949414169,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 37,
+        "coef": 19.58953114119659,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 38,
+        "coef": 10.178485379878293,
+        "is_treated_unit": false,
+        "n": 1209
+      },
+      {
+        "unit": 39,
+        "coef": -7.818050333444159,
+        "is_treated_unit": false,
+        "n": 1209
+      }
+    ],
+    "true_coef": -27.349111081928,
+    "rank": 4,
+    "n_units": 39,
+    "p_value": 0.10256410256410256,
+    "placebo_sd": 17.849963979046446,
+    "placebo_mean": 5.400124791776761e-13,
+    "rows_per_regression": 1209
+  },
+  "variant_B_treated_dropped": {
+    "label": "B: treated unit dropped from the pool",
+    "rows": [
+      {
+        "unit": 1,
+        "coef": 21.61712837897467,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 2,
+        "coef": 21.463525778876967,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 4,
+        "coef": -12.022510710787099,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 5,
+        "coef": -4.2238623920676375,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 6,
+        "coef": 6.8414513423790995,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 7,
+        "coef": 7.754515182129773,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 8,
+        "coef": -3.1810694618112225,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 9,
+        "coef": -12.31485202901662,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 10,
+        "coef": 12.159020559545617,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 11,
+        "coef": 7.059022222890854,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 12,
+        "coef": -1.6508875083126624,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 13,
+        "coef": 2.531998288863771,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 14,
+        "coef": 2.8648767109580104,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 15,
+        "coef": -3.4229597934570983,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 16,
+        "coef": 0.9621723517774786,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 17,
+        "coef": 17.32433630787857,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 18,
+        "coef": 15.456317685012177,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 19,
+        "coef": -0.7148527988294092,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 20,
+        "coef": 6.092804838207777,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 21,
+        "coef": -39.329718076099745,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 22,
+        "coef": -62.401792381996415,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 23,
+        "coef": -0.9914297774942121,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 24,
+        "coef": -35.810351236111046,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 25,
+        "coef": -3.5607996864241493,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 26,
+        "coef": 11.733795533647156,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 27,
+        "coef": 0.4333459904764023,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 28,
+        "coef": 8.404966567351405,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 29,
+        "coef": -17.433771676510286,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 30,
+        "coef": 15.20676881591773,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 31,
+        "coef": 11.298662261182944,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 32,
+        "coef": 26.768480101477987,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 33,
+        "coef": -11.669807822519218,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 34,
+        "coef": 9.002715023049687,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 35,
+        "coef": -9.097736265947768,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 36,
+        "coef": -6.954043218349461,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 37,
+        "coef": 18.88289448840378,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 38,
+        "coef": 9.465326865849017,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 39,
+        "coef": -8.54368045919554,
+        "is_treated_unit": false,
+        "n": 1178
+      },
+      {
+        "unit": 3,
+        "coef": -27.349111081928,
+        "is_treated_unit": true,
+        "n": 1209
+      }
+    ],
+    "true_coef": -27.349111081928,
+    "rank": 4,
+    "n_units": 39,
+    "p_value": 0.10256410256410256,
+    "placebo_sd": 17.83289865172276,
+    "placebo_mean": -0.7012592585129928,
+    "rows_per_regression": 1178
+  }
+}

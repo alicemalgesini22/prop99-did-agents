@@ -1,0 +1,11 @@
+{
+  "reference_rel": -1,
+  "n_pre_coefs": 23,
+  "joint_pre_F": 4.8136904500368605,
+  "joint_pre_p": 1.9537890709907314e-06,
+  "pre_linear_slope_per_month": 0.047019264069250166,
+  "mean_pre_coef": 2.0374389233957255,
+  "mean_post_coef": 9.841180555555857,
+  "coef_rel0": 7.340447619047963,
+  "coef_rel1": 9.622257142856837
+}

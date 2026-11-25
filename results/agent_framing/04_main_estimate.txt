@@ -1,0 +1,23 @@
+Main estimate (agent_framing run)
+specification: cigsale ~ treated_post + unit FE + year FE
+treatment: (state == 3) & (year >= 1989) (12 treated rows)
+rows used: 1209 (all; no filters, no covariates)
+
+TWFE beta (treated x post)          = -27.3491 packs/person/year
+  classical SE                      = 4.4095
+  HC1 robust SE                     = 2.9379
+  cluster-by-state SE (38+1 groups) = 2.8487
+  NOTE: only 1 treated unit, so the cluster SE leans on the 38 control
+  states for the residual variance; it does NOT capture treated-unit
+  uncertainty. Inference therefore relies on the placebo test (step 7).
+
+cross-check (a): two-way within transform beta = -27.349111 (differs from dummy OLS by 1.03e-12)
+
+cross-check (b): simple 2x2 difference of means
+  treated (California) change, post - pre = -55.8605
+  control mean change, post - pre         = -28.5114
+  2x2 DiD (unweighted means)              = -27.3491
+  difference vs TWFE beta                 = -0.0000
+  (the 2x2 weights all years equally; TWFE weights years by within-unit
+   variance of the treatment timing, so a small difference is expected)
+

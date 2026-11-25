@@ -1,0 +1,38 @@
+{
+  "primary": {
+    "method": "cluster-robust by unit (CR1, G/(G-1))",
+    "label": "twfe_cluster_unit",
+    "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+    "n_obs": 600,
+    "n_units": 60,
+    "coef": -0.45315000000013805,
+    "se": 0.9632787134486572,
+    "t": -0.47042459640554585,
+    "p": 0.6380516946627173,
+    "ci_lo": -2.3411415854335855,
+    "ci_hi": 1.4348415854333092,
+    "cluster": "school_id",
+    "r2": 0.9563915412513906
+  },
+  "randomisation_inference": {
+    "n_draws": 2000,
+    "seed": 20261123,
+    "n_treated": 20,
+    "n_units": 60,
+    "observed_coef": -0.45314999999999817,
+    "n_more_extreme": 1245,
+    "p_value": 0.6226886556721639,
+    "rank_of_observed": 1246,
+    "null_mean": 0.004409099999999725,
+    "null_sd": 0.9326653448597957,
+    "null_q025": -1.828046250000004,
+    "null_q975": 1.7990100000000016,
+    "note": "two-sided; sharp null of no effect, treatment label permuted across units"
+  },
+  "placebo_date": {
+    "fake_start": 2015,
+    "sample": "2012-2016",
+    "coef": 0.15054166666666433,
+    "se": 1.9429124770635737
+  }
+}

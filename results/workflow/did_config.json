@@ -1,0 +1,24 @@
+{
+  "data_path": "data/raw/california_tobacco.csv",
+  "unit": "state",
+  "time": "year",
+  "outcome": "cigsale",
+  "treated_units": [3],
+  "treatment_rule": "california == True AND year >= 1989",
+  "treatment_start": 1989,
+  "controls": "all other states (IDs 1, 2, 4-39)",
+  "controls_rule": "state != 3",
+  "cluster": "state",
+  "controls_covariates": [],
+  "notes": {
+    "unit": "Column 'state' = numeric state ID 1-39; panel unit is state-year (README: 'Panel structure').",
+    "time": "Column 'year' = 1970-2000, integer years (README: 'Panel structure').",
+    "outcome": "Column 'cigsale' = per-capita cigarette SALES in packs/person/year, NOT consumption (README 'Columns' table; AGENTS.md rule).",
+    "treated_units": "California = state 3: 'california' is True in exactly 31 rows, all with state == 3 (verified in step 1). Plan.md: 'Treated unit: California (state = 3)'.",
+    "treatment_start": "Proposition 99 tax effective 1 January 1989 (README 'Treatment'); treatment rule california & (year >= 1989) gives exactly 12 treated rows (verified in step 1).",
+    "after_treatment_not_used": "Column 'after_treatment' is NOT used as the treatment: it is 1 in 468 rows, of which 456 are NOT California (verified in step 1). It is a year dummy, per README and AGENTS.md rule.",
+    "controls_covariates": "None: plan.md test 1 says 'no covariates (covariates are missing in many years)'; AGENTS.md forbids adding covariates without asking. lnincome missing 1970-71, 1998-2000; beer missing 1970-83, 1998-2000; age15to24 missing 1991-2000.",
+    "cluster": "state, per procedure default; only 1 treated unit, so inference will use placebo tests (procedure step 7).",
+    "taxonomy": "data/taxonomy.json does not exist; roles filled from data/README.md and verified against the data in step 1."
+  }
+}

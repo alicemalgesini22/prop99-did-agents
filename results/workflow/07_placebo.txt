@@ -1,0 +1,50 @@
+Placebo design: 38 control units get a placebo treatment starting 1989; plus the 1 actual treated unit = 39 estimates.
+Each estimate: {OUTCOME} ~ treat_post + unit FE + time FE, all 1,209 rows.
+
+Placebo coefficients (sorted, most negative first):
+  rank  1: unit 22  coef  -61.639
+  rank  2: unit 21  coef  -38.583
+  rank  3: unit 24  coef  -35.066
+  rank  4: unit  3  coef  -27.349  <-- ACTUAL treated unit
+  rank  5: unit 29  coef  -16.702
+  rank  6: unit  9  coef  -11.587
+  rank  7: unit  4  coef  -11.294
+  rank  8: unit 33  coef  -10.942
+  rank  9: unit 35  coef   -8.372
+  rank 10: unit 39  coef   -7.818
+  rank 11: unit 36  coef   -6.230
+  rank 12: unit  5  coef   -3.501
+  rank 13: unit 25  coef   -2.839
+  rank 14: unit 15  coef   -2.701
+  rank 15: unit  8  coef   -2.459
+  rank 16: unit 12  coef   -0.930
+  rank 17: unit 23  coef   -0.271
+  rank 18: unit 19  coef    0.005
+  rank 19: unit 27  coef    1.153
+  rank 20: unit 16  coef    1.681
+  rank 21: unit 13  coef    3.250
+  rank 22: unit 14  coef    3.583
+  rank 23: unit 20  coef    6.808
+  rank 24: unit  6  coef    7.556
+  rank 25: unit 11  coef    7.774
+  rank 26: unit  7  coef    8.469
+  rank 27: unit 28  coef    9.119
+  rank 28: unit 34  coef    9.716
+  rank 29: unit 38  coef   10.178
+  rank 30: unit 31  coef   12.011
+  rank 31: unit 26  coef   12.445
+  rank 32: unit 10  coef   12.870
+  rank 33: unit 30  coef   15.916
+  rank 34: unit 18  coef   16.165
+  rank 35: unit 17  coef   18.032
+  rank 36: unit 37  coef   19.590
+  rank 37: unit  2  coef   22.168
+  rank 38: unit  1  coef   22.322
+  rank 39: unit 32  coef   27.470
+
+Treated unit [3] estimate: -27.349
+Rank among 39 (most negative = 1): 4
+Placebo p-value = rank / 39 = 4/39 = 0.1026
+
+Placebo distribution: min -61.639, max 27.470, mean 0.720, median 2.466
+Placebo coefficients more negative than the treated unit's: 3

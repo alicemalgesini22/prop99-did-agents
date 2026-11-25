@@ -1,0 +1,64 @@
+{
+  "unit_candidates": [
+    "region_id"
+  ],
+  "time_candidates": [
+    "quarter"
+  ],
+  "group_flag_values": [
+    "False",
+    "True"
+  ],
+  "group_flag_is_bool": true,
+  "group_flag_constant_within_unit": true,
+  "one_row_per_unit_time": true,
+  "outcome_numeric": true,
+  "outcome_missing": 0,
+  "time_values": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "time_gaps": true,
+  "columns_resembling_post": [],
+  "n_treated_units": 10,
+  "n_control_units": 20,
+  "treated_units": [
+    1,
+    6,
+    11,
+    15,
+    17,
+    20,
+    21,
+    23,
+    28,
+    30
+  ],
+  "control_units_excluded_from_spec": true,
+  "treatment_start_inside_panel": true,
+  "pre_periods_per_unit": 12,
+  "post_periods_per_unit": 12,
+  "same_start_for_all_treated": true
+}

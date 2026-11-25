@@ -1,0 +1,17 @@
+Rows used: 1209 (no filters: outcome complete, panel balanced)
+
+TWFE: cigsale ~ treat_post + C(state) + C(year)
+  treat_post coefficient : -27.349
+  classical SE           : 4.409  (p = 0.0000)
+  cluster-by-state SE   : 2.849  (p = 0.0000)
+  NOTE: cluster SEs are UNRELIABLE here (only 1 treated unit, 39 clusters,
+  treatment varies in 1 cluster). Inference uses placebo tests (step 7).
+  R-squared: 0.8776, N = 1209
+
+2x2 difference of means (cross-check):
+  treated : pre 116.211 -> post 60.350 (change -55.861)
+  control : pre 130.570 -> post 102.058 (change -28.511)
+  DiD     : -27.349
+
+Agreement check: TWFE -27.349 vs simple 2x2 DiD -27.349 (difference +0.000). TWFE weights units and periods by their
+outcomes' variance; with an unbalanced-by-value panel these can differ.

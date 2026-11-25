@@ -1,0 +1,51 @@
+{
+  "rules": {
+    "R1 one row per state-year (39x31=1209, no duplicates)": {
+      "pass": true,
+      "detail": "rows=1209, distinct units=39, distinct years=31, distinct pairs=1209"
+    },
+    "R2 california True only for state 3, in all 31 years": {
+      "pass": true,
+      "detail": "units flagged=[3.0], years flagged=31"
+    },
+    "R3 treatment True in exactly 12 rows (state 3, 1989-2000)": {
+      "pass": true,
+      "detail": "rows=12, years=1989-2000"
+    },
+    "R4 after_treatment True exactly when year >= 1989, for all states (468 rows)": {
+      "pass": true,
+      "detail": "True rows=468, rows disagreeing with (year>=1989)=0"
+    },
+    "R5 cigsale and retprice never empty and never negative": {
+      "pass": true,
+      "detail": "negative cigsale=0, negative retprice=0"
+    },
+    "R6 empty cells in the three covariates are empty, not zeros": {
+      "pass": true,
+      "detail": "empty strings={'lnincome': 195, 'beer': 663, 'age15to24': 390}; exact zeros={'lnincome': 0, 'beer': 0, 'age15to24': 0}"
+    },
+    "R7 no row dropped in the main analysis": {
+      "pass": true,
+      "detail": "main specification uses all 1209 rows (03_main_did.py, 04_event_study.py); 06_robustness.py drops rows only in the labelled window checks"
+    }
+  },
+  "pure_python_2x2": {
+    "cells": {
+      "treated_pre": 116.2105263157895,
+      "treated_post": 60.350000063578285,
+      "control_pre": 130.56952911334685,
+      "control_post": 102.05811394306652
+    },
+    "counts": {
+      "treated_pre": 19,
+      "treated_post": 12,
+      "control_pre": 722,
+      "control_post": 456
+    }
+  },
+  "did": -27.34911108193088,
+  "did_from_03": -27.349111081930864,
+  "twfe_from_03": -27.349111081928,
+  "difference_vs_03_2x2": -1.4210854715202004e-14,
+  "difference_vs_03_twfe": -2.8776980798284058e-12
+}

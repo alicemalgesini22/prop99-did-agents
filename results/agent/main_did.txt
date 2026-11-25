@@ -1,0 +1,52 @@
+=== Step 5: Two-way fixed effects DiD ===
+Formula: cigsale ~ treat_ + C(state) + C(year), N = 1209 rows
+treat_ coefficient: -27.3491
+SE (conventional, iid): 4.4095, 95% CI [-36.0007, -18.6975]
+SE (clustered by state): 2.8487
+R-squared: 0.8776
+NOTE: only 1 treated unit -> clustered SEs unreliable; see placebo test (04).
+
+2x2 difference of means (cross-check):
+  California: pre 116.211 -> post 60.350 (diff -55.861)
+  Control mean: pre 130.570 -> post 102.058 (diff -28.511)
+  2x2 DiD = -27.3491  (TWFE estimate above: -27.3491)
+
+=== Step 6: event study (1988 = reference) ===
+coef = treated-unit deviation vs controls relative to 1988; HC1 SEs
+ rel_year  year     coef     se    ci_lo    ci_hi
+      -19  1970  26.6395 2.9797  20.7993  32.4796
+      -18  1971  20.8605 2.9812  15.0176  26.7035
+      -17  1972  18.0447 3.3239  11.5301  24.5594
+      -16  1973  16.5842 3.0835  10.5407  22.6278
+      -15  1974  15.7553 2.8806  10.1095  21.4010
+      -14  1975  13.8921 2.8688   8.2693  19.5149
+      -13  1976  10.4632 3.0276   4.5292  16.3972
+      -12  1977   9.0342 2.5700   3.9971  14.0713
+      -11  1978   9.3500 2.1778   5.0817  13.6183
+      -10  1979   7.5368 2.0108   3.5957  11.4780
+       -9  1980   5.8342 1.8163   2.2743   9.3941
+       -8  1981   4.3368 1.8629   0.6856   7.9881
+       -7  1982   2.8290 1.8233  -0.7447   6.4026
+       -6  1983   3.2737 1.7152  -0.0880   6.6353
+       -5  1984   3.6211 1.7529   0.1854   7.0567
+       -4  1985   3.4079 1.7477  -0.0175   6.8333
+       -3  1986   2.8289 1.7961  -0.6913   6.3492
+       -2  1987   3.6368 1.8977  -0.0827   7.3563
+        0  1989  -3.5395 2.0525  -7.5622   0.4833
+        1  1990  -4.1421 2.3301  -8.7091   0.4249
+        2  1991 -11.9184 2.4715 -16.7624  -7.0745
+        3  1992 -12.1711 2.6060 -17.2787  -7.0634
+        4  1993 -15.5710 2.4575 -20.3876 -10.7545
+        5  1994 -19.7947 2.4899 -24.6748 -14.9147
+        6  1995 -23.0342 2.5055 -27.9449 -18.1235
+        7  1996 -22.9605 2.4931 -27.8469 -18.0742
+        8  1997 -24.2658 2.5184 -29.2017 -19.3299
+        9  1998 -24.9342 2.4507 -29.7376 -20.1308
+       10  1999 -26.6711 2.4989 -31.5687 -21.7734
+       11  2000 -26.8105 2.7319 -32.1650 -21.4560
+
+Pre-1989 coefficients: 18 of them, mean 9.885, range [2.829, 26.639]
+OLS slope of pre-period coefficients on relative year: -1.265 packs/yr
+(negative slope => gap was already widening before treatment; positive => narrowing)
+
+Saved results/agent/event_study.csv, event_study.png, main_did.txt

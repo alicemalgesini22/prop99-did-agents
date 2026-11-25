@@ -1,0 +1,36 @@
+{
+  "formula": "reading_score ~ ev_m5 + ev_m4 + ev_m3 + ev_m2 + ev_p0 + ev_p1 + ev_p2 + ev_p3 + ev_p4 + C(school_id) + C(year)",
+  "n_obs": 600,
+  "ref_period": -1,
+  "cluster": "school_id",
+  "endpoint_binning": [
+    -5,
+    4
+  ],
+  "pretrend_joint_test": {
+    "wald_chi2": 3.4737250397181816,
+    "p": 0.4818847404170289,
+    "df_num": 4,
+    "terms": [
+      "ev_m5",
+      "ev_m4",
+      "ev_m3",
+      "ev_m2"
+    ],
+    "note": "H0: all pre-treatment coefficients = 0; Wald chi2 (not F) from cluster-robust OLS"
+  },
+  "pre_coefs": [
+    1.8307499999995749,
+    -2.714499999999827,
+    0.1722500000001195,
+    -0.1732499999998609,
+    0.0
+  ],
+  "post_coefs": [
+    -1.929749999999924,
+    1.144000000000199,
+    0.3210000000000939,
+    -1.3984999999999117,
+    -1.2872500000000358
+  ]
+}

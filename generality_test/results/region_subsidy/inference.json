@@ -1,0 +1,31 @@
+{
+  "cluster": "region_id",
+  "n_clusters": 30,
+  "n_treated_clusters": 10,
+  "main_cluster_robust": {
+    "coef": 7.289079166666664,
+    "se": 0.21029770446513008,
+    "t": 34.66076429700298,
+    "p": 3.075164157394177e-263,
+    "ci_lo": 6.876903239883561,
+    "ci_hi": 7.701255093449767,
+    "n_obs": 720
+  },
+  "randomisation": {
+    "seed": 20261124,
+    "n_draws": 5000,
+    "n_treated_per_draw": 10,
+    "observed_coef": 7.2890791666666646,
+    "n_draws_abs_ge_observed": 0,
+    "rank_abs_desc": 1,
+    "denominator": 5001,
+    "p_rank": 0.0001999600079984003,
+    "p_two_sided": 0.0001999600079984003,
+    "p_one_sided_positive": 0.0001999600079984003,
+    "null_mean": 0.00939487916666669,
+    "null_sd": 1.3513301379694396,
+    "null_q025": -2.641243958333333,
+    "null_q975": 2.7668247916666626
+  },
+  "note": "Randomisation test permutes which regions are treated (10 of 30), keeping the quarter-13 start and the design. It tests the sharp null of no effect."
+}

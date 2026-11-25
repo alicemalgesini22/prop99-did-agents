@@ -1,0 +1,42 @@
+data file: data/raw/california_tobacco.csv
+columns in file: ['state', 'year', 'cigsale', 'lnincome', 'beer', 'age15to24', 'retprice', 'california', 'after_treatment']
+rows read: 1209  (no filter applied)
+
+[structure]
+distinct units: 39  (IDs 1..39)
+distinct periods: 31  (1970..2000)
+duplicate (unit, year) pairs: 0
+balanced panel: True  (rows per unit: min 31, max 31; expected 31 each; 39 x 31 = 1209)
+rows after structure checks: 1209 (nothing dropped)
+
+[missing values] (exact periods computed from the file)
+  state: 0 missing rows
+  year: 0 missing rows
+  cigsale: 0 missing rows
+  lnincome: 195 missing rows; years missing (for all units): [1970, 1971, 1998, 1999, 2000]
+  beer: 663 missing rows; years missing (for all units): [1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1998, 1999, 2000]
+  age15to24: 390 missing rows; years missing (for all units): [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
+  retprice: 0 missing rows
+  california: 0 missing rows
+  after_treatment: 0 missing rows
+rows after missing-value checks: 1209 (nothing dropped; missing cells only matter for covariates, which are not used)
+
+[config role checks]
+outcome 'cigsale': dtype float, range 40.7..296.2, never negative: True
+mechanism 'retprice': range 27.3..351.2, never negative: True
+'california' is True for state(s) [3], rows 31 (expected: 1 state x 31 years = 31)
+'after_treatment' is True for years 1989..2000, rows 468 = 39 states x 12 years
+if 'after_treatment' were used as the treatment: 456 treated rows belong to CONTROL units -> it is a year dummy, rejected as treatment
+treatment = california AND year >= 1989: 12 treated rows (expected 12), all in state [3], years 1989..2000
+treated units: 1 -> [3]
+control units: 38 (IDs 1..39)
+treatment True in any control-unit row: 0 (must be 0)
+treatment start per treated unit: {3: 1989}  -> single common start: True
+
+[outcome means] cigsale by group and period (packs/person/year)
+  California pre  (1970-1988): n=19, mean=116.21, sd=11.68
+  California post (1989-2000): n=12, mean=60.35, sd=12.08
+  Controls  pre  (1970-1988): n=722, mean=130.57, sd=32.70
+  Controls  post (1989-2000): n=456, mean=102.06, sd=23.59
+
+rows at end of script: 1209 (no filter, merge or drop was applied anywhere)

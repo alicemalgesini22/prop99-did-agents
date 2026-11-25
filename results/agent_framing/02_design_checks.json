@@ -1,0 +1,14 @@
+{
+  "treated_units": [
+    3
+  ],
+  "n_treated_units": 1,
+  "n_controls": 38,
+  "starts": {
+    "3": 1989
+  },
+  "same_start": true,
+  "staggered": false,
+  "post_column_true_in_controls": 456,
+  "post_column_usable_as_treatment": false
+}

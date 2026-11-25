@@ -1,0 +1,245 @@
+{
+  "specs": [
+    {
+      "label": "baseline_2017",
+      "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+      "n_obs": 600,
+      "n_units": 60,
+      "coef": -0.45315000000013805,
+      "se": 0.9632787134486572,
+      "t": -0.47042459640554585,
+      "p": 0.6380516946627173,
+      "ci_lo": -2.3411415854335855,
+      "ci_hi": 1.4348415854333092,
+      "cluster": "school_id",
+      "r2": 0.9563915412513906
+    },
+    {
+      "label": "treated_group_linear_trend",
+      "formula": "reading_score ~ treat_post + treat_trend + C(school_id) + C(year)",
+      "n_obs": 600,
+      "n_units": 60,
+      "coef": 0.1412874999999616,
+      "se": 2.2135525117703256,
+      "t": 0.06382839315926803,
+      "p": 0.949106869877607,
+      "ci_lo": -4.1971957009580505,
+      "ci_hi": 4.479770700957974,
+      "cluster": "school_id",
+      "r2": 0.9563996317913317,
+      "trend_coef": -0.11888749999998716,
+      "trend_se": 0.38499845741790895,
+      "trend_p": 0.7574737158747553
+    },
+    {
+      "label": "treated_unit_specific_trends",
+      "formula": "reading_score ~ treat_post + trend_u1 + trend_u7 + trend_u9 + trend_u12 + trend_u15 + trend_u16 + trend_u18 + trend_u19 + trend_u26 + trend_u30 + trend_u38 + trend_u41 + trend_u42 + trend_u44 + trend_u45 + trend_u46 + trend_u49 + trend_u50 + trend_u52 + trend_u57 + C(school_id) + C(year)",
+      "n_obs": 600,
+      "n_units": 60,
+      "coef": 0.14128750000013923,
+      "se": 2.254408312500744,
+      "t": 0.0626716550044182,
+      "p": 0.9500279690382712,
+      "ci_lo": -4.277271598949039,
+      "ci_hi": 4.559846598949317,
+      "cluster": "school_id",
+      "r2": 0.9573744739392344
+    },
+    {
+      "label": "start_2018",
+      "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+      "n_obs": 600,
+      "n_units": 60,
+      "coef": 0.16389583333339086,
+      "se": 1.1201650940294234,
+      "t": 0.14631399800526707,
+      "p": 0.8836735159665536,
+      "ci_lo": -2.0315874077032023,
+      "ci_hi": 2.359379074369984,
+      "cluster": "school_id",
+      "r2": 0.9563786937460796
+    },
+    {
+      "label": "start_2019",
+      "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+      "n_obs": 600,
+      "n_units": 60,
+      "coef": -0.5496071428570621,
+      "se": 1.185671624622799,
+      "t": -0.46354077422735845,
+      "p": 0.642976795436619,
+      "ci_lo": -2.8734808246088424,
+      "ci_hi": 1.774266538894718,
+      "cluster": "school_id",
+      "r2": 0.9563950037575959
+    },
+    {
+      "label": "drop_2020_2021",
+      "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+      "n_obs": 480,
+      "n_units": 60,
+      "coef": 0.022033333333177474,
+      "se": 1.152520728343052,
+      "t": 0.019117515886117036,
+      "p": 0.9847473583269785,
+      "ci_lo": -2.236865785655076,
+      "ci_hi": 2.280932452321431,
+      "cluster": "school_id",
+      "r2": 0.9586653989100472
+    },
+    {
+      "label": "drop_2017",
+      "formula": "reading_score ~ treat_post + C(school_id) + C(year)",
+      "n_obs": 540,
+      "n_units": 60,
+      "coef": -0.12823750000019984,
+      "se": 1.1139844421325689,
+      "t": -0.1151160601082605,
+      "p": 0.9083531304043918,
+      "ci_lo": -2.311606885917979,
+      "ci_hi": 2.055131885917579,
+      "cluster": "school_id",
+      "r2": 0.9559993448741326
+    }
+  ],
+  "leave_one_out": [
+    {
+      "dropped_unit": 1,
+      "coef": -0.6403710526313926,
+      "se": 0.974497660674137,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 7,
+      "coef": -0.30121315789482495,
+      "se": 0.9819022790244524,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 9,
+      "coef": -0.4596342105263602,
+      "se": 0.9960051167138508,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 12,
+      "coef": -0.5170026315790501,
+      "se": 0.9935499681364336,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 15,
+      "coef": -0.5046868421053254,
+      "se": 0.9944153297652326,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 16,
+      "coef": -0.2962657894737468,
+      "se": 0.9809600221777239,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 18,
+      "coef": -0.4785815789474386,
+      "se": 0.9956375628001756,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 19,
+      "coef": -0.2811078947369099,
+      "se": 0.9778788442419714,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 26,
+      "coef": -0.21437105263168554,
+      "se": 0.9607590066645472,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 30,
+      "coef": -0.4781605263159667,
+      "se": 0.9956504742047502,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 38,
+      "coef": -0.5082657894736782,
+      "se": 0.994182971669964,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 41,
+      "coef": -0.7188973684212092,
+      "se": 0.952148606561253,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 42,
+      "coef": -0.7094236842106794,
+      "se": 0.955287199372121,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 44,
+      "coef": -0.325844736842261,
+      "se": 0.9861330376868834,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 45,
+      "coef": -0.6656342105264725,
+      "se": 0.9682055110933799,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 46,
+      "coef": -0.18542368421067845,
+      "se": 0.9514772648508747,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 49,
+      "coef": -0.5757394736842603,
+      "se": 0.9868560818292078,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 50,
+      "coef": -0.48889736842109865,
+      "se": 0.9952538247300026,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 52,
+      "coef": -0.560265789473612,
+      "se": 0.9890336910485793,
+      "n_obs": 590
+    },
+    {
+      "dropped_unit": 57,
+      "coef": -0.15321315789477197,
+      "se": 0.9397737220790291,
+      "n_obs": 590
+    }
+  ],
+  "trend_spec_comparison": {
+    "group_trend": {
+      "rank": 71,
+      "ssr": 20312.05072104167,
+      "df_resid": 529.0,
+      "coef": 0.1412874999999616
+    },
+    "unit_trends": {
+      "rank": 90,
+      "ssr": 19857.90219049622,
+      "df_resid": 510.0,
+      "coef": 0.14128750000013923
+    },
+    "rank_difference": 19,
+    "coef_identical": true,
+    "note": "with one common start date the per-school treated trends are orthogonal to the pooled post contrast, so they change the SE but not the coefficient"
+  },
+  "note": "all cluster-robust by school; controls: none"
+}

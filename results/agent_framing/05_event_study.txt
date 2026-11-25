@@ -1,0 +1,32 @@
+Event study (agent_framing): cigsale, reference year 1988
+rows used: 1209 (all; no filters); design rank 99 = 99 columns (full rank)
+number of event coefficients: 30 (18 pre, 12 post)
+
+pre-1989 coefficients (year: coef (se)):
+  1970:  26.639 (17.039)
+  1971:  20.861 (17.039)
+  1972:  18.045 (17.039)
+  1973:  16.584 (17.039)
+  1974:  15.755 (17.039)
+  1975:  13.892 (17.039)
+  1976:  10.463 (17.039)
+  1977:  9.034 (17.039)
+  1978:  9.350 (17.039)
+  1979:  7.537 (17.039)
+  1980:  5.834 (17.039)
+  1981:  4.337 (17.039)
+  1982:  2.829 (17.039)
+  1983:  3.274 (17.039)
+  1984:  3.621 (17.039)
+  1985:  3.408 (17.039)
+  1986:  2.829 (17.039)
+  1987:  3.637 (17.039)
+
+linear slope of the pre-1989 event coefficients: -1.2654 packs/person/year per year
+mean of the 5 event coefficients just before treatment (1984-1987): 3.3737
+mean of the first 5 post coefficients (1989-1993): -9.4684
+
+SEs plotted are classical: the event interactions are identified from a
+single treated unit, so no data-driven SE is fully trustworthy here;
+the shape (not the bands) is what matters, plus the placebo test.
+wrote C:\Users\alice\my-analysis\results\agent_framing\05_event_study.png

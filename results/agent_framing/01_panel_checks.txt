@@ -1,0 +1,46 @@
+Panel checks (agent_framing run)
+data file: data/raw/california_tobacco.csv
+
+rows read                        : 1209
+distinct units                   : 39
+distinct years                   : 31 (1970-2000)
+distinct (unit, year) pairs      : 1209
+duplicate (unit, year) pairs     : 0
+RULE 1 (one row per unit-year, 39x31 = 1209) : PASS
+
+rows with california == True    : 31
+units with california == True : [3]
+years covered for that unit      : 1970-2000 (31 years)
+RULE 2 (california True for one unit in all years)     : PASS
+
+treatment rows (group & year >= 1989) : 12 (expected 12 = 1 unit(s) x 12 post years)
+RULE 3 (treatment in exactly 12 rows)          : PASS
+
+rows with after_treatment == True      : 468 (expected 468 = 39 states x 12 years)
+post column == (year >= 1989) everywhere        : True
+RULE 4 (after_treatment is the year dummy for all states)     : PASS
+
+cigsale   : NaN=0, negative=0, min=40.7000, max=296.2000
+retprice  : NaN=0, negative=0, min=27.3000, max=351.2000
+RULE 5 (outcome & mechanism never empty or negative)     : PASS
+
+Missing values, exact years (each listed year is missing for every state):
+  state     : no missing values
+  year      : no missing values
+  cigsale   : no missing values
+  lnincome  : 195 rows in 5 years: [1970, 1971, 1998, 1999, 2000]
+             per-year counts: {1970: 39, 1971: 39, 1998: 39, 1999: 39, 2000: 39}
+  beer      : 663 rows in 17 years: [1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1998, 1999, 2000]
+             per-year counts: {1970: 39, 1971: 39, 1972: 39, 1973: 39, 1974: 39, 1975: 39, 1976: 39, 1977: 39, 1978: 39, 1979: 39, 1980: 39, 1981: 39, 1982: 39, 1983: 39, 1998: 39, 1999: 39, 2000: 39}
+  age15to24 : 390 rows in 10 years: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000]
+             per-year counts: {1991: 39, 1992: 39, 1993: 39, 1994: 39, 1995: 39, 1996: 39, 1997: 39, 1998: 39, 1999: 39, 2000: 39}
+  retprice  : no missing values
+RULE 6 (empty cell = missing, listed by exact year)      : see table above
+
+balanced panel (same #rows per unit)        : True (1 distinct count(s): [31])
+all units cover the identical year range    : True
+
+float32 artifact example (outcome, not cleaned): np.float64(40.7000007629395)
+
+Rows dropped in this script: 0 (checks only; the analysis sample stays at 1209 rows)
+Rows used by the main analysis: all 1209 (no filters; no covariates, so no rows lost to missingness)

@@ -1,0 +1,13 @@
+{
+  "n_rows": 1209,
+  "n_units": 39,
+  "n_periods": 31,
+  "balanced": true,
+  "n_treated_units": 1,
+  "treated_units": [
+    3
+  ],
+  "n_control_units": 38,
+  "treatment_rows": 12,
+  "single_common_treatment_start": true
+}

@@ -1,0 +1,64 @@
+{
+  "specs": {
+    "pooled_no_FE": {
+      "coef": -59.13011687700212,
+      "se_classic": 9.356834655176312,
+      "se_cluster": 4.23565691253707,
+      "t_cluster": -13.96008177668583,
+      "p_cluster": 1.5346841037934933e-16,
+      "n": 1209,
+      "k": 2,
+      "r2": 0.03202694848247578,
+      "se_cluster_note": "cluster by unit"
+    },
+    "unit_FE_only": {
+      "coef": -55.86052625221153,
+      "se_classic": 7.21950309217737,
+      "se_cluster": 3.3207526099052173e-13,
+      "t_cluster": -168216464200282.38,
+      "p_cluster": 0.0,
+      "n": 1209,
+      "k": 40,
+      "r2": 0.6544974408473407,
+      "se_cluster_note": "cluster by unit"
+    },
+    "year_FE_only": {
+      "coef": -41.70811387948804,
+      "se_classic": 8.394126993726063,
+      "se_cluster": 3.7389679105580496,
+      "t_cluster": -11.154980432357604,
+      "p_cluster": 1.502622791754502e-13,
+      "n": 1209,
+      "k": 32,
+      "r2": 0.25238714585430744,
+      "se_cluster_note": "cluster by unit"
+    },
+    "twfe_main": {
+      "coef": -27.349111081928,
+      "se_classic": 4.409454460855569,
+      "se_cluster": 2.8487415427773612,
+      "t_cluster": -9.600418525600666,
+      "p_cluster": 1.0473377139002832e-11,
+      "n": 1209,
+      "k": 70,
+      "r2": 0.8776413769506215,
+      "se_cluster_note": "cluster by unit"
+    }
+  },
+  "main_spec": "twfe_main",
+  "twfe_coef": -27.349111081928,
+  "twfe_se_cluster": 2.8487415427773612,
+  "twfe_se_classic": 4.409454460855569,
+  "n_clusters": 39,
+  "within_crosscheck": -27.349111081930864,
+  "two_by_two": {
+    "cells": {
+      "treated_post": 60.350000063578285,
+      "treated_pre": 116.21052631578948,
+      "control_post": 102.05811394306652,
+      "control_pre": 130.56952911334685
+    },
+    "did": -27.349111081930864
+  },
+  "n_rows": 1209
+}

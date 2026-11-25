@@ -1,0 +1,25 @@
+Design checks (agent_framing run)
+
+treated units (from california == True): [3]
+number of treated units: 1
+treatment start per treated unit (from the rule year >= 1989): {3: 1989}
+all treated units start in the same period: True
+group column matches cfg['treated_units'] [3]: True
+panel: 39 units; treated: 1, controls: 38
+
+Staggered adoption?
+  N/A: a single treated unit adopts once, so there is no staggered-timing
+  bias (the bad-comparison problem needs units treated at different dates).
+  The relevant design weakness here is the single treated unit itself:
+  with 1 treated unit, clustered standard errors are not reliable, so
+  inference uses placebo tests (step 7).
+
+Audit of the ready-made post column (required before ever using it):
+  after_treatment == True in 468 rows
+  of these, True in CONTROL units: 456 (38 control states x 12 years)
+  ...and 456 of them are in years >= 1989 (0 control rows are True even before 1989: impossible for a treatment dummy)
+  check 'zero for control units in post period': FAILS
+  -> after_treatment is a calendar-year dummy, NOT the treatment.
+  -> treatment used in this run: (state == 3) & (year >= 1989) (12 treated rows).
+
+Rows used: all 1209 (checks only, nothing dropped).

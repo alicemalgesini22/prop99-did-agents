@@ -1,0 +1,14 @@
+{
+  "n_units": 30,
+  "n_treated_units": 10,
+  "n_control_units": 20,
+  "treated_share_of_units": 0.3333333333333333,
+  "n_treated_obs": 240,
+  "n_treated_post_obs": 120,
+  "group_flag_changes_over_time": false,
+  "distinct_start_quarters": 1,
+  "timing": "uniform (one start quarter for all treated units)",
+  "staggered": false,
+  "few_treated_units_flag": false,
+  "clusters_for_inference": 30
+}

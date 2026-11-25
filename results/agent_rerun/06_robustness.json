@@ -1,0 +1,17 @@
+{
+  "beta_main": -27.349111081927997,
+  "two_step": {
+    "theta_ca_slope_diff_pre_fitted": -1.2317035513023087,
+    "se_theta_classical": 0.4053343268312336,
+    "beta_after_detrending": -8.257706036742235,
+    "se_beta_cluster_by_unit": 2.8487415427773612,
+    "change_vs_main": 19.091405045185763
+  },
+  "one_step": {
+    "theta_ca_slope_diff_all_periods": -1.4304882864620245,
+    "se_theta_cluster_by_unit": 0.18642493331096646,
+    "beta_with_ca_trend_regressor": -5.17654264177347,
+    "se_beta_cluster_by_unit": 1.2730490167898234,
+    "change_vs_main": 22.172568440154528
+  }
+}

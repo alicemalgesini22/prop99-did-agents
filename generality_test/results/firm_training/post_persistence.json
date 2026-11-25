@@ -1,0 +1,8 @@
+{
+  "post_gap_first_12_months": 24.219045238095237,
+  "post_gap_last_12_months": 23.142744444444443,
+  "post_gap_change": -1.0763007936507947,
+  "post_gap_slope_per_month": -0.05914970186335392,
+  "event_study_mean_rel0_11": 10.379330952381196,
+  "event_study_mean_rel_ge12": 9.303030158730516
+}

@@ -1,0 +1,35 @@
+{
+  "mde_80pct_power": 2.744141513660123,
+  "t_crit_975": 2.000995378088267,
+  "se_used": 0.9632787134486572,
+  "post_coefs": [
+    {
+      "rel_time": 0,
+      "coef": -1.929749999999924,
+      "se": 2.113456658554247
+    },
+    {
+      "rel_time": 1,
+      "coef": 1.144000000000199,
+      "se": 2.4197412457258265
+    },
+    {
+      "rel_time": 2,
+      "coef": 0.3210000000000939,
+      "se": 2.6666904319247373
+    },
+    {
+      "rel_time": 3,
+      "coef": -1.3984999999999117,
+      "se": 2.531944335981143
+    },
+    {
+      "rel_time": 4,
+      "coef": -1.2872500000000358,
+      "se": 2.4160640743351047
+    }
+  ],
+  "mean_post_coef": -0.6300999999999156,
+  "mean_post_coef_excl_2017": -0.3051874999999136,
+  "note": "MDE is the smallest true effect that would be detected with 80% power at 5% (two-sided) given this clustered SE; it ignores sampling error in the SE itself."
+}

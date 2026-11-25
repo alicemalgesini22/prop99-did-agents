@@ -1,0 +1,26 @@
+{
+  "data_path": "data/raw/california_tobacco.csv",
+  "unit": "state",
+  "time": "year",
+  "outcome": "cigsale",
+  "treated_units": [3],
+  "treatment_rule": "(state == 3) & (year >= 1989)",
+  "treatment_start": 1989,
+  "controls": "state != 3 (38 states: 1, 2, 4-39)",
+  "cluster": "state",
+  "controls_covariates": [],
+  "reference_period": 1988,
+  "mechanism_outcome": "retprice",
+  "sources": {
+    "unit": "data/README.md: numeric state IDs 1-39; treated unit is California = state 3 (california == True for all 31 rows of state 3)",
+    "time": "data/README.md: year, 1970-2000",
+    "outcome": "data/README.md + plan.md: cigsale = per-capita cigarette SALES in packs/person/year (not consumption)",
+    "treated_units": "plan.md + data/README.md: state 3 = California",
+    "treatment_start": "plan.md + data/README.md: Proposition 99, 25-cent tax effective 1 Jan 1989; treatment = california AND year >= 1989",
+    "after_treatment_note": "after_treatment is a year dummy (year >= 1989) for every state, NOT the treatment; verified below in 01_checks.py",
+    "controls_covariates": "plan.md: no covariates (lnincome/beer/age15to24 missing in many years, would drop rows)",
+    "cluster": "unit = state, default; but only 1 treated unit, so inference relies on placebo tests (see summary)",
+    "reference_period": "plan.md: 1988 as event-study reference (last pre-treatment year)",
+    "mechanism_outcome": "plan.md mechanism check: retprice (retail price per pack); no missing values (data/README.md)"
+  }
+}

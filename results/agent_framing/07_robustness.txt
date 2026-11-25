@@ -1,0 +1,16 @@
+Robustness: California-specific linear pre-trend (agent_framing run)
+rows used in every regression below: 1209, except the pre-period fit:
+
+main TWFE beta (no trend adjustment) = -27.3491
+
+pre-period fit: rows used 741 of 1209 (19 years x 39 states; dropped 468 post-1988 rows because plan.md fits the trend on the pre-period only)
+
+(A) two-step, theta fitted on pre-1989 rows only:
+    theta (CA differential slope, pre)  = -1.2317 (classical SE 0.4053) packs/person/year per year
+    beta after removing CA pre-trend    = -8.2577 (cluster SE 2.8487)
+    change vs main                      = 19.0914
+
+(B) one-step, California x t regressor estimated on all periods:
+    theta (CA differential slope)       = -1.4305 (cluster SE 0.1864)
+    beta(treated_post)                  = -5.1765 (cluster SE 1.2730)
+    change vs main                      = 22.1726

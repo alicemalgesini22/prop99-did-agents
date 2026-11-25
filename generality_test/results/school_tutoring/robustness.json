@@ -1,0 +1,50 @@
+{
+  "specs": [
+    {
+      "spec": "main TWFE (no trends)",
+      "coef": -0.45315000000013805,
+      "se": 0.9632787134486572,
+      "p": 0.6380516946627173,
+      "n_obs": 600,
+      "design_rank": NaN,
+      "n_columns": NaN,
+      "change_vs_main": 0.0
+    },
+    {
+      "spec": "(a) treated-group linear trend",
+      "coef": 0.1412874999999616,
+      "se": 2.2135525117703256,
+      "p": 0.949106869877607,
+      "n_obs": 600,
+      "design_rank": 71.0,
+      "n_columns": 71.0,
+      "change_vs_main": 0.5944375000000997
+    },
+    {
+      "spec": "(b) school-specific linear trends (all units)",
+      "coef": 0.14128750000059398,
+      "se": 2.345887664501582,
+      "p": 0.9519742566717408,
+      "n_obs": 600,
+      "design_rank": 129.0,
+      "n_columns": 129.0,
+      "change_vs_main": 0.594437500000732
+    },
+    {
+      "spec": "(c) unit-specific trends for the 20 treated schools",
+      "coef": 0.14128750000013923,
+      "se": 2.254408312500744,
+      "p": 0.9500279690382712,
+      "n_obs": 600,
+      "design_rank": 90.0,
+      "n_columns": 90.0,
+      "change_vs_main": 0.5944375000002773
+    }
+  ],
+  "trend_centre_year": 2016,
+  "a_equals_c": true,
+  "residualised_corr_min": 0.16025147161605224,
+  "residualised_corr_max": 0.16025147161605238,
+  "notes": "A linear trend is constant within a year, so (b) has one redundant slope with the year effects; one slope is dropped and the _did coefficient is verified against the full design. (a) and (c) are numerically identical because with a single start date and a balanced panel the residualised treated-unit trend columns are proportional to one another.",
+  "script": "src/school_tutoring/08_robustness.py"
+}

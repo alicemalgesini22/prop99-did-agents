@@ -1,0 +1,12 @@
+Robustness: California-specific linear pre-trend (agent_rerun)
+main beta (no trend adjustment)              = -27.3491
+
+(A) two-step, theta fitted on pre-1989 rows:
+    theta (CA slope differential, pre)       = -1.2317 (classical SE 0.4053) packs/person/year per year
+    beta after removing CA pre-trend         = -8.2577 (cluster SE 2.8487)
+    change vs main                           =  19.0914
+
+(B) one-step, California x t regressor, all periods:
+    theta (CA slope differential)            = -1.4305 (cluster SE 0.1864)
+    beta(treated_post)                       = -5.1765 (cluster SE 1.2730)
+    change vs main                           =  22.1726

@@ -1,0 +1,30 @@
+{
+  "n_treated_units": 20,
+  "n_control_units": 40,
+  "share_treated": 0.3333333333333333,
+  "timing_column_exists": false,
+  "treatment_start": 2017,
+  "timing_source": "data/README_school_tutoring.md: 'Some schools introduced a tutoring programme from the 2017 school year'. No timing column exists in the data.",
+  "staggered": "not detectable: no adoption-date column; single start assumed from README",
+  "units_per_group_period_ok": true,
+  "pre_mean_treated": 500.0419,
+  "pre_mean_control": 510.47785000000005,
+  "pre_level_gap": -10.435950000000048,
+  "post_mean_treated": 506.7207,
+  "post_mean_control": 517.6098000000001,
+  "pretrend_test": {
+    "coef_treated_x_trend": -0.11202499999974869,
+    "se": 0.6077823094026076,
+    "p": 0.8537642774464769,
+    "n_obs": 300,
+    "sample": "periods 2012-2016 only",
+    "cluster": "school_id"
+  },
+  "students_did_diagnostic": 6.1749999999999545,
+  "enrolment_column": "students",
+  "enrolment_mean_overall": 774.9916666666667,
+  "enrolment_min": 293.0,
+  "enrolment_max": 1198.0,
+  "sd_within_unit": 7.226573560527112,
+  "few_treated_units_note": "20 treated units is above the ~5 threshold, so cluster-robust SEs by unit are the primary inference, but 20 clusters is still modest; a placebo/randomisation-inference test over units is reported as a cross-check."
+}

@@ -1,0 +1,21 @@
+{
+  "data_path": "data/raw/california_tobacco.csv",
+  "unit": "state",
+  "time": "year",
+  "outcome": "cigsale",
+  "treated_units": [3],
+  "treated_unit_rule": "rows where the boolean column 'california' is True (verified to be state == 3 in all 31 years)",
+  "treatment_start": 1989,
+  "controls": [],
+  "cluster": "state",
+  "mechanism_outcome": "retprice",
+  "notes": {
+    "outcome_meaning": "cigsale = per-capita cigarette SALES in packs per person per year (tax-paid sales), not consumption. Source: data/README.md.",
+    "treatment_variable": "treated = (unit in treated_units) AND (time >= treatment_start). The file's 'after_treatment' column is a calendar-year dummy (year >= 1989) that is True for all 39 states and is NOT used as the treatment; see data/README.md, caveat 2.",
+    "why_no_covariates": "lnincome, beer and age15to24 are missing for all 39 states in many years (lnincome 1970-71 and 1998-2000; beer 1970-83 and 1998-2000; age15to24 1991-2000). Adding them would drop rows and change the estimand; plan.md test 1 says no covariates, and AGENTS.md forbids adding covariates without asking.",
+    "treatment_timing": "Single treated unit, single adoption date (1 January 1989). No staggered timing, so plain two-way fixed effects is not exposed to the Goodman-Bacon/negative-weighting problem.",
+    "controls_choice": "controls = [] means the other 38 states enter as pure two-way fixed effects (state and year dummies), i.e. all 1,209 rows are used.",
+    "inference": "cluster = state (39 clusters, but only 1 treated unit -> clustered SEs are unreliable; inference relies on the placebo test, as plan.md test 3 requires).",
+    "after_treatment_column_check": "script 01 checks that 'after_treatment' is True in 468 = 39*12 rows, i.e. 456 of them non-California, which is why it cannot be used as the treatment."
+  }
+}
